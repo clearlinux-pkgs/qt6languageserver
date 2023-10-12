@@ -4,10 +4,10 @@
 # Using build pattern: cmake
 #
 Name     : qt6languageserver
-Version  : 6.5.3
-Release  : 1
-URL      : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qtlanguageserver-everywhere-src-6.5.3.tar.xz
-Source0  : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qtlanguageserver-everywhere-src-6.5.3.tar.xz
+Version  : 6.6.0
+Release  : 2
+URL      : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtlanguageserver-everywhere-src-6.6.0.tar.xz
+Source0  : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtlanguageserver-everywhere-src-6.6.0.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause GFDL-1.3 GPL-2.0 GPL-3.0 LGPL-3.0
@@ -52,15 +52,15 @@ license components for the qt6languageserver package.
 
 
 %prep
-%setup -q -n qtlanguageserver-everywhere-src-6.5.3
-cd %{_builddir}/qtlanguageserver-everywhere-src-6.5.3
+%setup -q -n qtlanguageserver-everywhere-src-6.6.0
+cd %{_builddir}/qtlanguageserver-everywhere-src-6.6.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696366059
+export SOURCE_DATE_EPOCH=1697147707
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -96,7 +96,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1696366059
+export SOURCE_DATE_EPOCH=1697147707
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qt6languageserver
 cp %{_builddir}/qtlanguageserver-everywhere-src-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/qt6languageserver/b073f11f0c81a95ab5e32aa6b5d23a5955a95274 || :
@@ -119,27 +119,27 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/QtJsonRpc/6.5.3/QtJsonRpc/private/qhttpmessagestreamparser_p.h
-/usr/include/QtJsonRpc/6.5.3/QtJsonRpc/private/qjsonrpcprotocol_p.h
-/usr/include/QtJsonRpc/6.5.3/QtJsonRpc/private/qjsonrpcprotocol_p_p.h
-/usr/include/QtJsonRpc/6.5.3/QtJsonRpc/private/qjsonrpctransport_p.h
-/usr/include/QtJsonRpc/6.5.3/QtJsonRpc/private/qjsontypedrpc_p.h
-/usr/include/QtJsonRpc/6.5.3/QtJsonRpc/private/qtypedjson_p.h
+/usr/include/QtJsonRpc/6.6.0/QtJsonRpc/private/qhttpmessagestreamparser_p.h
+/usr/include/QtJsonRpc/6.6.0/QtJsonRpc/private/qjsonrpcprotocol_p.h
+/usr/include/QtJsonRpc/6.6.0/QtJsonRpc/private/qjsonrpcprotocol_p_p.h
+/usr/include/QtJsonRpc/6.6.0/QtJsonRpc/private/qjsonrpctransport_p.h
+/usr/include/QtJsonRpc/6.6.0/QtJsonRpc/private/qjsontypedrpc_p.h
+/usr/include/QtJsonRpc/6.6.0/QtJsonRpc/private/qtypedjson_p.h
 /usr/include/QtJsonRpc/QtJsonRpc
 /usr/include/QtJsonRpc/QtJsonRpcDepends
 /usr/include/QtJsonRpc/QtJsonRpcVersion
 /usr/include/QtJsonRpc/qtjsonrpcglobal.h
 /usr/include/QtJsonRpc/qtjsonrpcversion.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverbase_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverbase_p_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageservergen_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageservergen_p_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverjsonrpctransport_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverprespectypes_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverprotocol_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverspec_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlanguageserverspectypes_p.h
-/usr/include/QtLanguageServer/6.5.3/QtLanguageServer/private/qlspnotifysignals_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverbase_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverbase_p_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageservergen_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageservergen_p_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverjsonrpctransport_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverprespectypes_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverprotocol_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverspec_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlanguageserverspectypes_p.h
+/usr/include/QtLanguageServer/6.6.0/QtLanguageServer/private/qlspnotifysignals_p.h
 /usr/include/QtLanguageServer/QtLanguageServer
 /usr/include/QtLanguageServer/QtLanguageServerDepends
 /usr/include/QtLanguageServer/QtLanguageServerVersion
@@ -170,9 +170,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libQt6JsonRpc.so.6
-/usr/lib64/libQt6JsonRpc.so.6.5.3
+/usr/lib64/libQt6JsonRpc.so.6.6.0
 /usr/lib64/libQt6LanguageServer.so.6
-/usr/lib64/libQt6LanguageServer.so.6.5.3
+/usr/lib64/libQt6LanguageServer.so.6.6.0
 
 %files license
 %defattr(0644,root,root,0755)
