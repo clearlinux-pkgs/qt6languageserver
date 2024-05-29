@@ -1,3 +1,4 @@
+libQt6JsonRpc.so.6:NonQt
 libQt6JsonRpc.so.6:Qt_6
 libQt6JsonRpc.so.6:Qt_6_PRIVATE_API
 libQt6JsonRpc.so.6:_ZN10QTypedJson10jsonRpcLogEv
@@ -109,6 +110,7 @@ libQt6JsonRpc.so.6:_ZNK16QJsonRpcProtocol19messagePreprocessorEv
 libQt6JsonRpc.so.6:_ZNK16QJsonRpcProtocol20protocolErrorHandlerEv
 libQt6JsonRpc.so.6:_ZNK16QJsonRpcProtocol21defaultMessageHandlerEv
 libQt6JsonRpc.so.6:_ZNK16QJsonRpcProtocol22invalidResponseHandlerEv
+libQt6LanguageServer.so.6:NonQt
 libQt6LanguageServer.so.6:Qt_6
 libQt6LanguageServer.so.6:Qt_6_PRIVATE_API
 libQt6LanguageServer.so.6:_ZN17QLspNotifySignals11qt_metacallEN11QMetaObject4CallEiPPv
